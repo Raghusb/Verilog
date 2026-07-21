@@ -6,7 +6,7 @@ This directory contains digital logic components modeled structurally using Veri
 
 ## 1. Half Adder
 
-* **RTL File:** `rtl/half_adder_gate.v`
+* **RTL File:** `rtl/half_adder.v`
 * **Boolean Equations:**
   * Sum = A ^ B
   * Carry = A & B
