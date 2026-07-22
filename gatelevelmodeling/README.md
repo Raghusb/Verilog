@@ -10,3 +10,10 @@ This directory contains digital logic components modeled structurally using Veri
 * **Boolean Equations:**
   * Sum = A ^ B
   * Carry = A & B
+
+## 2. Full Adder
+
+* **RTL File:** `rtl/full_adder.v`
+* **Boolean Equations:**
+  * Sum = A ^ B ^ Cin
+  * Carry = (A & B) | (B & C) | (A & C) 
