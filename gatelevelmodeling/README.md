@@ -24,3 +24,13 @@ This directory contains digital logic components modeled structurally using Veri
 * **Boolean Equations:**
   * Sum = A ^ B ^ Cin
   * Carry = (A & B) | (Cin (A ^ B) ) 
+
+## 4. Half Adder using NAND GATE
+
+* **RTL File:** `rtl/halfadder_nand.v`
+* **Boolean Equations:**
+  * Nand1 = (A.B)' WIRE1
+  * Nand2 = A.B + A' WIRE2
+  * Nand3 = A.B + B' WIRE3
+  * Nand4 = A ^ B  Sum
+  * Nand5 = A.B  Carry
