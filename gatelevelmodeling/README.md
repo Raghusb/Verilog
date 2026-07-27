@@ -34,3 +34,17 @@ This directory contains digital logic components modeled structurally using Veri
   * Nand3 = A.B + B' WIRE3
   * Nand4 = A ^ B  Sum
   * Nand5 = A.B  Carry
+
+ ## 5. Full Adder using NAND GATE
+
+ * **RTL File:** `rtl/fulladder_nand.v`
+ * **Boolean Equations:**
+   * Nand1 = (A.B)' WIRE1
+   * Nand2 = A.B + A' WIRE2
+   * Nand3 = A.B + B' WIRE3
+   * Nand4 = A ^ B  WIRE4
+   * Nand5 = ((A ^ B).Cin)' WIRE5
+   * Nand6 = ((A ^ B).Cin)'.(A ^ B))' WIRE6
+   * Nand7 = ((A ^ B).Cin)'.Cin)' WIRE7
+   * Nand8 = ((A ^ B).Cin + (A ^ B)'((A ^ B).Cin + Cin')=  A ^ B ^ Cin=SUM
+   * Nand9 = ((A.B)'(A ^ B).Cin))'= A.B + (A ^ B)Cin = CARRY
