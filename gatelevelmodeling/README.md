@@ -48,3 +48,14 @@ This directory contains digital logic components modeled structurally using Veri
    * Nand7 = ((A ^ B).Cin)'.Cin)' WIRE7
    * Nand8 = ((A ^ B).Cin + (A ^ B)'((A ^ B).Cin + Cin')=  A ^ B ^ Cin=SUM
    * Nand9 = ((A.B)'(A ^ B).Cin))'= A.B + (A ^ B)Cin = CARRY
+
+ ## 6. Half adder using NOR GATE
+
+ * **RTL File:** `rtl/halfadder_nor.v`
+ * **Boolean Equations:**
+   * Nor1 = (A + B)'          WIRE1
+   * Nor2 = A' . B            WIRE2
+   * Nor3 = A . B'            WIRE3
+   * Nor4 = (A ^ B)'          WIRE4
+   * Nor5 = A ^ B             Sum
+   * Nor6 = A . B             Carry (using Nor(WIRE2, WIRE3))
